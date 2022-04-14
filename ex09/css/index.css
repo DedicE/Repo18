@@ -1,24 +1,149 @@
+html,
 body {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-header .container #branding {
-  width: 100%;
+header {
+  background-color: #35424A;
 }
 
-nav ul .current {
-  float: right;
-  list-style: none;
-  margin-left: 50px;
+header .container {
+  display: flex;
+  height: 100%;
+  align-items: baseline;
+}
+
+#branding {
+  flex: 2;
+}
+nav {
+  flex: 1;
+}
+ul {
+  display: flex;
+  height: fit-content;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+li {
+  padding-top: 5%;
+  list-style-type: none;
+  padding-right: 5%;
+}
+
+.current a {
+  color: rgb(238, 67, 37);
+}
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13pt;
 }
 
 .highlight {
-  color: red;
-  margin-left: 50px;
+  color: rgb(238, 67, 37);
+}
+#branding h1 {
+  color: white;
+  display: block;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+#showcase {
+  width: 100%;
+  height: 70%;
+  background: url("../img/gigi-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale() opacity(1.0);
+  background-color: rgba(22, 22, 22, 0.5);
+  position: relative;
 }
 
 #showcase .container {
-  background: url("/img/gigi-logo.png");
+  position: absolute;
+  width: 100%;
+  margin-top: 5%;
+  text-shadow: slategrey;
+}
+
+#showcase .container h1 {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 30pt;
+  text-shadow: slategray;
+}
+
+#showcase .container p {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+#newsletter {
+  background-color: rgb(51, 58, 65);
+  display: flex;
+}
+
+#newsletter .container {
+  display: flex;
+  width: 100%;
+}
+
+#newsletter .container h1 {
+  flex: 1;
+  color: white;
+  padding-left: 10%;
+}
+
+#newsletter .container form {
+  flex: 1;
+  margin-left: 35%;
+}
+
+#newsletter .container input {
+  margin-top: 3%;
+  min-height: 30%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.button_1 {
+  background-color: rgb(223, 63, 35);
+  color: white;
+  height: 40%;
+}
+
+#boxes .container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+
+.box {
+  flex-basis: 25%;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(223, 63, 35);
+  color: white;
+  justify-content: center;
+  padding-bottom: 5px;
+  text-align: center;
+
 }
